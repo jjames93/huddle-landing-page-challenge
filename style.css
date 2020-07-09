@@ -1,5 +1,56 @@
 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+    
+body{
     font-family: 'Open Sans', sans-serif;  
+    font-size: 16px;
+    background-image: url();
+    background-color: hsl(257, 40%, 49%); 
+}
+
+section{
+    display:flex;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
    
 }
 
+.container{
+    display: grid;
+    grid-template-columns: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.words{
+    color: white;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.words h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.words p{
+    margin-bottom: 5px;
+    line-height: 1.8;
+}
+
+#button{
+text-decoration: none;
+color: hsl(257, 40%, 49%);
+background-color: white;
+padding: 20px;
+width: 80%;
+display: inline-block;
+margin-bottom: 80px;
+margin-top: 30px;
+border-radius: 50px;
+}
