@@ -32,6 +32,7 @@ section{
     margin-top: 30px;
     margin-bottom: 90px;
     grid-area: logo;
+    grid-area: span 1 / span 1;
 }
 
 .huddle{
@@ -89,20 +90,32 @@ footer{
 
     .container{
         display: grid;
-        grid-template-areas: ;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 30% 50% 20%;
         max-width: 1400px;
         margin: 0 auto;
-}
     }
-    
+
     .logo{
-        grid-area: span 1 / span 1;
-
+        grid-column: 1 / 2;
     }
 
-    .mockup
+    .mockup{
         grid-row-start: 2;
-        grid-area: span 1 / span 1;
-}
+    }
+
+    .words{
+        grid-row-start: 2;
+    }
+
+    .contain2 {
+        grid-row-start: 3;
+        grid-column-start: 2;
+    }
+
+
+}  
+  
+
+  
+
