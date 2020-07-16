@@ -7,14 +7,17 @@
 body{
     font-family: 'Open Sans', sans-serif;  
     font-size: 16px;
-    background-image: url(/images/bg-desktop.svg);
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100% 55%;
 
    
     background-color: hsl(257, 40%, 49%); 
 }
 
 section{
-    display:flex;
+    display: flex;
     width: 100%;
     min-height: 100vh;
     align-items: center;
@@ -25,11 +28,11 @@ section{
 .container{
     display: grid;
     grid-template-columns: 100%;
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
+    padding: 50px;
 }
 .logo{
-    margin-top: 30px;
     margin-bottom: 90px;
     grid-area: logo;
     grid-area: span 1 / span 1;
@@ -78,7 +81,7 @@ border-radius: 50px;
 }
 
 .social img{
-    width: 12%;
+    width: 8%;
     margin: 10px;
 }
     
@@ -86,7 +89,14 @@ footer{
     color:white;
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 820px){
+
+    body{
+        font-family: 'Open Sans', sans-serif;  
+        font-size: 16px;
+        background-image: url(/images/bg-desktop.svg);
+        background-size: cover;
+    }
 
     .container{
         display: grid;
@@ -94,6 +104,7 @@ footer{
         grid-template-rows: 30% 50% 20%;
         max-width: 1400px;
         margin: 0 auto;
+        padding: 50px;
     }
 
     .logo{
@@ -106,16 +117,28 @@ footer{
 
     .words{
         grid-row-start: 2;
+        padding-left: 50px;
     }
 
     .contain2 {
         grid-row-start: 3;
         grid-column-start: 2;
     }
-    
-    .social img{
-        
+
+    #button{
+        text-decoration: none;
+        color: hsl(257, 40%, 49%);
+        background-color: white;
+        padding: 15px;
+        width: 40%;
+        display: inline-block;
+        margin-bottom: 80px;
+        margin-top: 30px;
+        border-radius: 50px;
+
     }
+    
+  
 
 }  
   
