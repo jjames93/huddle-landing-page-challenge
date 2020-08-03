@@ -2,10 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;  
+ }
+
+ i{
+    font-family: FontAwesome;
+    font-style: normal;
  }
     
 body{
-    font-family: 'Open Sans', sans-serif;  
+    
     font-size: 16px;
     background-image: url(/images/bg-mobile.svg);
     background-repeat: no-repeat;
@@ -78,21 +84,21 @@ border-radius: 50px;
 box-shadow: 0px 0px 15px 2px rgb(61, 43, 92);
 
 }
-
-.social{
-    width: 45%;
-    display: flex;
-    margin: 0 auto;
+.wrapper{
     text-align: center;
-    margin-bottom: 20px;
-    list-style-type: none;
 }
 
-.social img{
-    width: 30%;
+li{
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    border-style: solid;
+    border-radius: 50%;
+    padding: 13px 20px;
+    margin: 10px 10px;
+    color: white
 }
-  
-}
+
     
 footer{
     color:white;
@@ -143,24 +149,23 @@ footer{
     }
 
     .wrapper{
+        grid-row-start: 3;
         grid-column-start: 2;
-        grid-row-start: 4;
-    }
-    .social{
-        display: flex;
-        justify-content: flex-end;
-        width: 45%;
-        margin-left: 50%;
-        margin-bottom: 20px;
-        list-style-type: none;
-        
+        text-align: right;
     }
 
-    .social a{
-        color: white;
-        border: 1px solid white;
+    li{
+        list-style: none;
+        display: inline-block;
+        font-size: 15px;
+        border-style: solid;
         border-radius: 50%;
+        padding: 13px 18px;
+        margin: 10px 10px;
+        color: white
     }
+
+
 
     .buttoncontainer{
         text-align: left;
